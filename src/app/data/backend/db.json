@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1654867796443,
+      "type": 1,
+      "descripcion": "Mangu de desayuno",
+      "fecha": "10/06/2022",
+      "monto": 80
+    },
+    {
+      "id": 1654867846442,
+      "type": 1,
+      "descripcion": "Jugo de mango",
+      "fecha": "09/06/2022",
+      "monto": 35
+    },
+    {
+      "id": 1654868917262,
+      "type": 2,
+      "descripcion": "Pago de nomina",
+      "fecha": "23/04/2022",
+      "monto": 30000
+    },
+    {
+      "id": 1654868937351,
+      "type": 2,
+      "descripcion": "Pago de nomina",
+      "fecha": "23/04/2022",
+      "monto": 30000
+    },
+    {
+      "id": 1654874256824,
+      "type": 2,
+      "descripcion": "Nuevo ingreso de prueba",
+      "fecha": "10/06/2022",
+      "monto": 1
+    }
+  ]
+}

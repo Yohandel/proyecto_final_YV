@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-body  pt-5 px-5">
+        <div class="row g-3 align-items-center">
+  
+            <div class="col-auto">
+                <div class="btn btn-success mt-3" (click)="openModalBills()" style="background: indigo; border: 0px;">
+                    ➕ Agregar Ingreso
+                </div>
+            </div>
+            <div class="col-auto">
+
+            </div>
+        </div>
+    </div>
+    <div class="card-body  px-5">
+        <tabla-template
+        [title] = "title"
+        [data] = "incomesCopy"
+        (getData)="getIncomes()"
+        [titleTot]="'Total de Ingresos'"
+        [montoTot]="getTotalMont()"
+        ></tabla-template>
+    </div>
+</div>

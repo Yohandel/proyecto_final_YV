@@ -1,0 +1,127 @@
+
+/* You can add global styles to this file, and also import other style files */
+.btn-primary{
+    color:  rgb(114, 121, 118) !important;
+    border: 0;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #dcd8d8, #ffffff);
+    box-shadow:  20px 20px 60px #cfcccc,
+                 -20px -20px 60px #ffffff;
+                 transition:0.5s;
+    
+}
+
+.btn-primary:hover{
+    color: rgb(61, 63, 62) !important;
+}
+
+.logo{
+    height: 2.5rem;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(90%) saturate(2820%) hue-rotate(268deg) brightness(74%) contrast(130%);
+}
+
+
+.card{
+    border-radius: 25px !important;
+    background: #f4f0f0;
+    box-shadow:  41px 41px 82px #e5e2e2,
+                 -41px -41px 82px #fffefe;
+                 border: 0 !important; 
+}
+
+label{
+    color:  rgb(114, 121, 118) !important;
+}
+.text-label{
+    color:  rgb(114, 121, 118) !important;
+}
+
+input{
+    border: 0 !important;
+    border-radius: 0px;
+background: #f4f0f0;
+box-shadow: inset 7px 7px 15px #e5e2e2,
+            inset -7px -7px 15px #fffefe;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-dialog-container {
+  
+    border-radius: 20px !important;
+    background: #f4f0f0;
+    box-shadow:  41px 41px 82px #e5e2e22c,
+                 -41px -41px 82px #fffefe27;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+    opacity: 1;
+}
+
+tr th{
+    border-bottom: 2px solid indigo  !important;
+    background: #4b0082 !important;
+
+    box-shadow: inset 44px 44px 88px #310055,
+                inset -44px -44px 88px #6500b0!important;
+    
+}
+
+tfood tr td{
+    border: 0; border-bottom:1px solid #000
+}
+
+.form-control:focus {
+    border-color: indigo;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px indigo;
+   
+  }
+
+  .active{
+      color: #4b0082;
+  }
+
+
+
+::-webkit-scrollbar {
+    width: 0.5em !important;
+    height: 0.5em !important;
+  }
+  
+  
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: indigo;
+    border-radius: 20px;
+  }
+  
+  
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: indigo;
+  }
+  
+
+  .red{
+      color: red;
+  }
+
+  .green{
+      color: green;
+  }
+
+  .mat-paginator-container {
+    background: #f4f0f0;
+    box-shadow:  41px 41px 82px #e5e2e22c,
+                 -41px -41px 82px #fffefe27;
+}

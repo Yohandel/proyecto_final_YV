@@ -1,0 +1,44 @@
+
+<div class="container-general">
+<nav class="navbar navbar-light navbar-expand-lg  header" data-aos="fade-down">
+  <div class="container" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="logo-container">
+      <a class="navbar-brand" routerLink="/home">
+        <img src="assets/Logo/Logo-dolar.svg" class="mx-auto d-block mt-1 logo" alt="Logo de App">
+      </a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="/gastos" routerLinkActive="active">Gastos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ingresos" routerLinkActive="active">Ingresos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/gastos-ingresos" routerLinkActive="active">Gastos / Ingresos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="mt-5">
+    <div class="container pb-5">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+<!--   <div class="footer fixed-bottom">
+    <div class="text-center p-3 text-muted h6">
+    NEO Finance MAnager Copyright © 2021 NEO - All rights reserved || Designed By: Jean Cornelio 
+    </div>
+    </div> -->
+
+</div>

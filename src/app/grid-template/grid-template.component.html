@@ -1,0 +1,54 @@
+<div class="col-12 col-md-3">
+  <div class="mb-3">
+      <label for="gasto" class="form-label" >Filtro</label>
+      <input type="string" class="form-control" name="search" (keyup)="filter()"  [(ngModel)]="filterInp">
+    </div>
+</div>
+
+
+<h3 class="pb-2 text-label fs-5">{{title}}</h3>
+<div class="table-responsive">
+<table class="table">
+    <thead class="table-light">
+      <tr style="border-bottom: 0 !important;">
+          <th class="text-white text-center">Secuencia</th>
+          <th class="text-white">Descripción</th>
+          <th class="text-white">Fecha</th>
+          <th class="text-white">Tipo</th>
+          <th class="text-white text-center" style="width: 200px!important;">Monto</th>
+          <th class=" text-center text-white align-middle" style="width: 200px!important;" *ngIf="title !== 'Lista de Gastos y Ingresos'">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let budgetElemente of pageSlice">
+          <td class="text-label align-middle text-center">{{budgetElemente.id}}</td>
+          <td class="text-label align-middle">{{budgetElemente.descripcion}}</td>
+          <td class="text-label align-middle">{{budgetElemente.fecha}}</td>
+          <td class="align-middle fw-bold" [ngClass]="{'red':budgetElemente.type === 1, 'green': budgetElemente.type === 2}">{{budgetElemente.type == 1 ? 'Gasto':'Ingreso'}}</td>
+          <td class="align-middle text-center " [ngClass]="{'red':budgetElemente.type === 1, 'green': budgetElemente.type === 2}">{{budgetElemente.monto | currency:"RD$, DOP "}}</td>
+          <td class="align-middle " *ngIf="title !== 'Lista de Gastos y Ingresos'">
+            <button class="btn btn-danger p-2" (click)="deleteBudgetElement(budgetElemente.id)" style="margin-left: 70px;" >
+              🗑️
+            </button>
+          </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+          <td class="fw-bold" [ngClass]="{'red':title === 'Lista de Gastos', 'green': title === 'Lista de Ingresos'}">{{titleTot}} </td>
+          <td class="text-center" [ngClass]="{'red':title === 'Lista de Gastos', 'green': title === 'Lista de Ingresos'}" style="margin-left: 200px;">{{montoTot | currency:"RD$, DOP "}}</td>
+         
+      
+      </tr>
+    </tfoot>
+
+  </table>
+  <mat-paginator [length]= "data.length" 
+                 [pageSize]="5"
+                 [pageSizeOptions]= "[1,5,25,50,100]"
+                 (page)="OnPageChange($event)"> 
+</mat-paginator>
+</div>

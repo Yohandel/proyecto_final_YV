@@ -1,0 +1,28 @@
+<h2 mat-dialog-title class="text-label"> Agregar {{data.title}}</h2>
+<mat-dialog-content class="py-2">
+    <div class="row g-3 align-items-center">
+      <div class="col-auto">
+        <div class="mb-3">
+            <label for="gasto" class="form-label">Descripción</label>
+            <input type="text" class="form-control" id="" [(ngModel)]="descriptBill" >
+          </div>
+    </div>
+        <div class="col-auto">
+            <div class="mb-3">
+                <label for="gasto" class="form-label">Monto</label>
+                <input type="number" class="form-control" id="" [(ngModel)]="montoBill" >
+              </div>
+        </div>
+        <div class="col-auto">
+            <div class="mb-3">
+                <label for="gasto" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="" aria-describedby="fecha" [(ngModel)]="fechaBill">
+              </div>
+        </div>
+      
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="true" mat-dialog-close class="btn btn-danger btn-sm me-2">Cerrar</button>
+  <button mat-button class=" btn-success btn btn-sm" (click)="setBudget()">Agregar</button>
+</mat-dialog-actions>
